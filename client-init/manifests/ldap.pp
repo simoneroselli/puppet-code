@@ -12,11 +12,15 @@ define client-init::ldap(
       $ldap_cfg      = 'ldap.conf'
       $ldap_cfg_path = '/etc/ldap/ldap.conf'
       $ldap_cfg_tmpl = 'client-init/ldap.conf.deb.erb'
-      $nss_cfg      = 'nsswitch.conf'
-      $nss_cfg_path = '/etc/nsswitch.conf'
+      $nss_cfg       = 'nsswitch.conf'
+      $nss_cfg_path  = '/etc/nsswitch.conf'
       $ldap_pkg      = ['ldap-utils', 
                         'ldap-auth-config']
     }
+  }
+
+  package { $ldap_pkg :
+    ensure => installed,
   }
 
   file { $ldap_cfg :
