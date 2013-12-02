@@ -1,0 +1,5 @@
+---
+# Postgresql
+psql_role_definition: ['standby'] # possibile values <master>/<standby>
+psql_version: ['9.0']
+psql_shmmax: ['1102553088'] # shared_buffer = 1G
