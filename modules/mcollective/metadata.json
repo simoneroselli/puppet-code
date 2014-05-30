@@ -1,0 +1,17 @@
+{
+  "name": "plista-mcollective",
+  "version": "0.1.0",
+  "author": "Simone Roselli",
+  "summary": "Mcollective middleware/server setup",
+  "license": "Apache 2.0",
+  "source": "",
+  "project_page": "README.md",
+  "issues_url": null,
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_range": ">= 1.0.0"
+    }
+  ]
+}
+
